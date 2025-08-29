@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SENAI | Aluno</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <img id="logo" src="img/logo.png" alt="logo do Senai">
+
+    <!-- Login -->
+    <div id="caixaLogin" class="caixa ativa">
+        <p>LOGIN</p>
+        <input class="input" id="inputEmail" type="email" placeholder="Email">
+        <input class="input" id="inputPassword" type="password" placeholder="Senha" maxlength="8">
+        <button class="button" id="login" onclick="Login()">ENTRAR</button>
+        <p class="toggleText">Não tem conta? <span id="linkCadastro">Cadastre-se</span></p>
+    </div>
+
+    <!-- Cadastro -->
+    <div id="caixaCadastro" class="caixa">
+        <p>CADASTRO</p>
+        <input class="input" type="email" placeholder="Email">
+        <input class="input" type="password" placeholder="Senha" maxlength="8">
+        <button class="button" id="buttonCadastrar" onclick="Cadastrar()">CADASTRAR</button>
+        <p class="toggleText">Já tem conta? <span id="linkLogin">Voltar ao Login</span></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
